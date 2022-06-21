@@ -16,7 +16,6 @@ abstract class Controller {
             header("Location: " . substr($view, 9));
             return;
         }
-        return _VIEW . "/" . $view;
+        return _VIEW . $view;
     }
 }
-
