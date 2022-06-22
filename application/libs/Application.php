@@ -9,10 +9,10 @@ class Application{
     public function __construct() {
         $getUrl = '';
         if (isset($_GET['url'])) {
-            $getUrl = rtrim($_GET['url'], '/');
+            $getUrl = rtrim($_GET['url'], '/'); 
             $getUrl = filter_var($getUrl, FILTER_SANITIZE_URL);
         }        
-        $getParams = explode('/', $getUrl);
+        $getParams = explode('/', $getUrl); 
         $controller = isset($getParams[0]) && $getParams[0] != '' ? $getParams[0] : 'board';
         $action = isset($getParams[1]) && $getParams[1] != '' ? $getParams[1] : 'index';
 
@@ -21,6 +21,6 @@ class Application{
             exit();
         }
         $controllerName = 'application\controllers\\' . $controller . 'controller';        
-        new $controllerName($action);
+        new $controllerName($action); // Controller.php(4~8행) 생성자 함수 action 호출
     }
 }
