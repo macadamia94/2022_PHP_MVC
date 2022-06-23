@@ -1,0 +1,41 @@
+.writer {
+    height: 100px;
+    width: 700px;
+}
+
+#container {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 45px;
+    font-size: 23.5px;
+    text-align: center;
+    background-color: #3C3C3C;
+    color: white;
+    width: 800px;
+}
+
+.read {
+    background-color: #EEEEEE;
+    width: 30px;
+    text-align: center;
+    height: 33px;
+}
+
+.read2 {
+    background-color: white;
+    text-align: center;
+    width: 60px;
+    height: 33px;
+    padding-left: 10px;
+}
+
+.ctnt {
+    padding: 20px;
+    border: 1px solid #444444;
+    height: 300px;
+}
