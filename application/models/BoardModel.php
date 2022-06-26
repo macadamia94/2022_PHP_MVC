@@ -44,4 +44,16 @@ class BoardModel extends Model {
         $stmt->bindValue(':ctnt', $param["ctnt"]);
         $stmt->execute();
     }
+
+    public function insBoard(&$param) {
+        $sql = "INSERT INTO t_board
+                (i_user, title, ctnt)
+                VALUES
+                (:i_user, :title, :ctnt)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->bindValue(':i_user', $param["i_user"]);
+        $stmt->bindValue(':title', $param["title"]);
+        $stmt->bindValue(':ctnt', $param["ctnt"]);
+        $stmt->execute();
+    }
 }

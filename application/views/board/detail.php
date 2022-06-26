@@ -4,7 +4,8 @@
 <body>
     <div>
         <button id="btnDel" data-i_board="<?=$this->data->i_board?>">delete</button>
-        <a href="mod?i_board=<?$this->data->i_board?>"><button>modify</button></a>
+        <a href="mod?i_board=<?=$this->data->i_board?>"><button>modify</button></a>
+        <a href="list"><button>list</button></a>
     </div>
     <table id="container">
         <tr>
