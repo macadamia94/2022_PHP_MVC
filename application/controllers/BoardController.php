@@ -74,11 +74,11 @@ class BoardController extends Controller {
 
     public function writeProc() {
         $model = new BoardModel();
-        // $i_user = $_SESSION[_LOGINUSER]->i_user;
+        $i_user = $_SESSION[_LOGINUSER]->i_user;
         $title = $_POST["title"];
         $ctnt = $_POST["ctnt"];
         $param = [
-            // "i_user" => $i_user,
+            "i_user" => $i_user,
             "title" => $title,
             "ctnt" => $ctnt
         ];

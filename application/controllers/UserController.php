@@ -52,4 +52,9 @@ class UserController extends Controller {
       return "redirect:/board/list";
     }
 
+    public function logout() {
+        flash(_LOGINUSER);
+        return "redirect:/board/list";
+    }
+
 }

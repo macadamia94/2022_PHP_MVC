@@ -2,7 +2,6 @@
 <html lang="en">
 
 <body>
-    <a href="write"><button>write</button></a>
     <h1>LIST</h1>
     <table>
         <thead>
